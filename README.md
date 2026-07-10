@@ -27,20 +27,22 @@ This is a production-ready static website. No build step is required.
 
 The included `.htaccess` keeps `index.html` as the directory index and redirects HTTP traffic to HTTPS when Apache rewrite support is enabled by the hosting plan.
 
-## Legal Placeholders to Replace
+## Legal Information Used
 
-Before public launch, replace placeholders on the contact/imprint and privacy pages:
+The contact/imprint and privacy pages use the legal information from the existing `wallaroo.gmbh` site:
 
-- Full legal company name
-- Legal entity type, if applicable
-- Street address
-- Postal code, city, and country
-- Managing director / owner
-- Commercial register details, if applicable
-- VAT ID, if applicable
+- Wallaroo GmbH
+- Bonhoefferstr. 31, 90473 Nürnberg, Germany
+- Managing Director: Alex Stoilovski
+- Commercial register: HRB 44703, Amtsgericht Nürnberg
+- VAT ID: DE456811191
+- General email: `info@wallaroo.gmbh`
+- Studio/app support email: `support@wallaroo.studio`
 
 ## Notes
 
 - The website is independent from the Android Sortiago project.
+- The visual design is aligned with the existing `wallaroo.gmbh` black/yellow brand system, logo treatment, dark panels, pill navigation, and display typography.
+- Generated project assets are stored in `assets/`: `game-sortiago-style.png`, `game-neon-runner.png`, `game-island-strategy.png`, and `app-reliability-dashboard.png`.
 - The app privacy policy mentions the current Sortiago status conservatively: Google Play Billing is used, Google User Messaging Platform is used, the current release does not serve ads yet, and future versions may use Google AdMob rewarded or interstitial ads after consent where required.
 - Main support email: `support@wallaroo.studio`.
