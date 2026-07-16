@@ -43,6 +43,6 @@ The contact/imprint and privacy pages use the legal information from the existin
 
 - The website is independent from the Android Sortiago project.
 - The visual design is aligned with the existing `wallaroo.gmbh` black/yellow brand system, logo treatment, dark panels, pill navigation, and display typography.
-- Generated project assets are stored in `assets/`: `game-sortiago-style.png`, `game-neon-runner.png`, `game-island-strategy.png`, and `app-reliability-dashboard.png`.
+- Product images are stored in `assets/`: `sortiago.jpg`, `Hexa_sprint.jpg`, `MA_strategy.jpg`, and `Lexion_dict.jpg`.
 - The app privacy policy mentions the current Sortiago status conservatively: Google Play Billing is used, Google User Messaging Platform is used, the current release does not serve ads yet, and future versions may use Google AdMob rewarded or interstitial ads after consent where required.
 - Main support email: `support@wallaroo.studio`.
