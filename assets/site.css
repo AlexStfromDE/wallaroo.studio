@@ -264,31 +264,90 @@ h3 {
 }
 
 .hero-media {
-  display: grid;
-  grid-template-columns: .76fr .92fr;
-  gap: 16px;
-  align-items: center;
+  position: relative;
+  display: block;
+  min-width: 0;
 }
 
-.hero-media img,
 .product-shot img,
 .showcase-card img {
   width: 100%;
   object-fit: cover;
 }
 
-.hero-media img {
+.hero-slideshow {
+  position: relative;
+  width: min(100%, 620px);
+  aspect-ratio: 4 / 5;
+  margin-left: auto;
+  overflow: hidden;
   border: 1px solid var(--soft-line);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow);
+  background: #050505;
 }
 
-.hero-media .hero-tall {
-  aspect-ratio: 9 / 16;
+.hero-slideshow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, .06), transparent 22%, transparent 72%, rgba(0, 0, 0, .28)),
+    radial-gradient(circle at 16% 16%, rgba(var(--brand-rgb), .22), transparent 14rem);
 }
 
-.hero-media .hero-wide {
-  aspect-ratio: 4 / 5;
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.07) translate3d(0, 0, 0);
+  animation: heroProductSlideshow 28s infinite;
+}
+
+.hero-slide:nth-child(1) {
+  object-position: 55% 52%;
+  animation-delay: 0s;
+}
+
+.hero-slide:nth-child(2) {
+  object-position: 54% 50%;
+  animation-delay: 7s;
+}
+
+.hero-slide:nth-child(3) {
+  object-position: 54% 48%;
+  animation-delay: 14s;
+}
+
+.hero-slide:nth-child(4) {
+  object-position: 52% 50%;
+  animation-delay: 21s;
+}
+
+@keyframes heroProductSlideshow {
+  0% {
+    opacity: 0;
+    transform: scale(1.11) translateY(1.5%);
+  }
+  5% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+    transform: scale(1.02) translateY(-1.5%);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(1.01) translateY(-2%);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .proof-strip {
@@ -631,12 +690,9 @@ a:focus-visible {
     font-size: .72rem;
   }
 
-  .hero-media {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-media .hero-wide {
-    display: none;
+  .hero-slideshow {
+    width: 100%;
+    aspect-ratio: 4 / 5.35;
   }
 
   .proof-item,
@@ -649,5 +705,14 @@ a:focus-visible {
   * {
     animation: none !important;
     transition: none !important;
+  }
+
+  .hero-slide:first-child {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-slide:not(:first-child) {
+    opacity: 0;
   }
 }
