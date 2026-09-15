@@ -39,7 +39,7 @@
 
       <section class="section">
         <article class="content">
-          <p><strong>Effective date:</strong> July 22, 2026</p>
+          <p><strong>Effective date:</strong> September 15, 2026</p>
           <p><strong>App name:</strong> Sortiago</p>
           <p><strong>Package reference:</strong> com.wallaroo.sortiago</p>
           <p><strong>Responsible party:</strong> Wallaroo GmbH, Bonhoefferstr. 31, 90473 Nürnberg, Germany</p>
@@ -89,16 +89,24 @@
 
           <h2>Analytics and Crash Reporting</h2>
           <p>
-            Sortiago currently does not use a separate third-party analytics service such as Google Analytics for Firebase and does not use a separate crash-reporting service such as Firebase Crashlytics. The app contains internal event and performance hooks that are not connected to an external analytics provider. When AdMob is active, Google may nevertheless process app interactions and diagnostics for advertising, advertising analytics, and fraud-prevention purposes as described above.
+            Sortiago uses Google Analytics for Firebase to understand how the app is used and to improve gameplay, reliability, and feature design. Analytics may process app interactions, gameplay events, app version, device information, approximate location derived from the IP address, and app-instance or similar device identifiers. Sortiago does not require an account, and Wallaroo Studio does not send names, email addresses, or other directly identifying profile information to Firebase Analytics.
+          </p>
+          <p>
+            Sortiago uses Firebase Crashlytics to diagnose crashes and Firebase Performance Monitoring to identify stability and performance problems. These services may process crash logs, stack traces, diagnostics, app state at the time of a crash, device and operating-system information, app version, app-instance identifiers, app-start measurements, and screen-rendering performance. This information is used for analytics, app functionality, fraud prevention, security, and improving the app's stability and performance.
+          </p>
+          <p>
+            Google processes this information on behalf of Wallaroo Studio under its applicable service terms and privacy safeguards. Analytics event and user data used for reporting is configured with a retention period of 14 months. Other Firebase service data may be retained according to Google's service-specific retention rules and legal obligations.
           </p>
 
           <h2>How Information Is Shared</h2>
           <p>
-            Wallaroo Studio does not sell personal data. Information is shared with Google only as needed for Google Play Billing, UMP, and, when enabled, AdMob. Advertising data may also be processed by advertising technology providers selected through Google's consent system. Google and those providers process information under their own privacy terms.
+            Wallaroo Studio does not sell personal data. Information is shared with Google only as needed for Google Play Billing, Google Analytics for Firebase, Firebase Crashlytics, Firebase Performance Monitoring, UMP, and, when enabled, AdMob. Advertising data may also be processed by advertising technology providers selected through Google's consent system. Google and those providers process information under their own privacy terms.
           </p>
           <ul>
             <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
             <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a></li>
+            <li><a href="https://firebase.google.com/terms/analytics">Google Analytics for Firebase terms</a></li>
+            <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a></li>
             <li><a href="https://support.google.com/admob/answer/9012903">Ad technology providers used for ads</a></li>
           </ul>
 
@@ -110,7 +118,8 @@
           <h2>Data Retention and Deletion</h2>
           <ul>
             <li><strong>Local game data:</strong> remains on the device until you clear the app's storage or uninstall the app.</li>
-            <li><strong>Google service data:</strong> is retained and deleted according to Google's policies, legal obligations, and user settings.</li>
+            <li><strong>Firebase Analytics event and user data:</strong> is configured with a retention period of 14 months.</li>
+            <li><strong>Other Google service data:</strong> is retained and deleted according to Google's service-specific policies, legal obligations, and user settings.</li>
             <li><strong>Support communications:</strong> are retained only as long as reasonably necessary to answer the request and for legal, accounting, security, or operational requirements.</li>
             <li><strong>Purchase-support records:</strong> may be retained for the period required to resolve purchases, prevent fraud, and meet legal or accounting obligations.</li>
           </ul>
