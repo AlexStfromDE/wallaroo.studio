@@ -8,8 +8,8 @@ Static public website for `wallaroo.studio`.
 - About / Company: `https://wallaroo.studio/about/`
 - Products / Games: `https://wallaroo.studio/products/`
 - Contact / imprint-style page: `https://wallaroo.studio/contact/`
-- Website privacy overview: `https://wallaroo.studio/privacy/`
-- Sortiago privacy policy: `https://wallaroo.studio/sortiago/privacy`
+- Sortiago privacy policy: `https://wallaroo.studio/sortiago/privacy/`
+- Legacy privacy URL: `https://wallaroo.studio/privacy/` redirects permanently to the Sortiago policy
 
 ## STRATO Deployment
 
@@ -22,10 +22,11 @@ This is a production-ready static website. No build step is required.
 5. Test:
    - `https://wallaroo.studio/`
    - `https://wallaroo.studio/products/`
-   - `https://wallaroo.studio/sortiago/privacy`
-6. Use `https://wallaroo.studio/sortiago/privacy` as the Google Play Console privacy policy URL for Sortiago.
+   - `https://wallaroo.studio/sortiago/privacy/`
+   - `https://wallaroo.studio/privacy/` (must redirect to the URL above)
+6. Use `https://wallaroo.studio/sortiago/privacy/` as the Google Play Console privacy policy URL for Sortiago.
 
-The included `.htaccess` keeps `index.html` as the directory index and redirects HTTP traffic to HTTPS when Apache rewrite support is enabled by the hosting plan.
+The included `.htaccess` keeps `index.html` as the directory index, redirects HTTP traffic to HTTPS, and permanently redirects `/privacy/` to the canonical Sortiago policy when Apache rewrite support is enabled by the hosting plan.
 
 ## Legal Information Used
 
