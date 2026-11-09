@@ -47,3 +47,12 @@ The contact/imprint and privacy pages use the legal information from the existin
 - Product images are stored in `assets/`: `sortiago.jpg`, `Hexa_sprint.jpg`, `MA_strategy.jpg`, and `Lexion_dict.jpg`.
 - The app privacy policy covers local game data, Google Play Billing, Google User Messaging Platform, conditional Google AdMob processing, retention and deletion, security, user choices, and support contact details.
 - Main support email: `support@wallaroo.studio`.
+
+## Sortiago Terms of Service
+
+- Page: `sortiago/terms/index.html`
+- Intended public URL: `https://wallaroo.studio/sortiago/terms/`
+- Upload the new page, updated HTML pages, and sitemap to STRATO together. No build is needed.
+- After upload, confirm the HTTPS URL opens without login and enter it in Google Play Console as the Terms of Service URL.
+- The terms identify Wallaroo GmbH as provider, consistent with the existing imprint and privacy policy. Confirm that this is the actual contracting provider for the app and that the Play Console declarations agree before publishing.
+- Publication of this webpage alone does not incorporate terms into an existing player agreement or replace any purchase-specific disclosures, consent, or notices required by law.
